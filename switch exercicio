@@ -1,0 +1,27 @@
+case 1 : 
+		while (mesada>0) && (resposta==1) {
+			System.out.println("Qual o valor da compra?");   
+            compra = entrada.nextFloat();
+			
+			if ((mesada-compra)>=0) {
+				mesada-=compra;
+				
+					if (mesada==0){
+						System.out.println("Sua mesada Acabou");
+					}else {
+						System.out.println("Ainda deseja comprar algo?");
+						System.out.println("1 - COMPRAR, 2 - ESTOU SATISFEITO");   
+						resposta=entrada.nextInt();
+					}
+					
+			}else {
+				System.out.println("Não possui dinheiro suficiente!!!");
+						System.out.println("Ainda deseja comprar algo?");
+						System.out.println("1 - COMPRAR, 2 - ESTOU SATISFEITO");   
+						resposta=entrada.nextInt();				 
+			}
+		
+		}
+break;
+
+
